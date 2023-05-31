@@ -1,6 +1,12 @@
-const btn = document.querySelector('button');
+const btn = document.querySelector('.my-btn');
 
 btn.addEventListener('click', (e)=> {
-    btn.style.background = 'crimson'
-    setTimeout(()=> {btn.style.background = ''}, 2000)
+    style(btn, {
+        backgroundColor: 'blue'
+    })
+    setTimeout(()=> {
+        style(btn, {
+            backgroundColor: colorSecondary
+        })
+    }, 500)
 })

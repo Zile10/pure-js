@@ -12,19 +12,26 @@ function flexContentCenterSpaced(){
 
 // Default Styling
 style('*', {
-    margin: 0,
+    margin: '0',
     padding: 0,
     boxSizing: 'border-box',
     fontFamily: fontPrimary,
 })
 
+style('nav', {
+    height: '60px',
+    padding: '0 20px',
+    backgroundColor: '#f0E0ff !important'
+})
+
 // H1
 style('h1', {
     textAlign: 'center',
+    color: 'black'
 })
 
 // Button
-style('button', {
+style('button.my-btn', {
     color: colorPrimary,
     backgroundColor: colorSecondary,
     fontWeight: 'bold',
@@ -36,3 +43,4 @@ style('button', {
 
 // .flex
 style('.flex', flexContentCenterSpaced)
+style()
