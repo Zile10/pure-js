@@ -22,9 +22,9 @@ function style(selector, ...stylings) {
     })
 }
 
-WebFont.load({
-    google: {
-        families: ['Nunito', 'Lato']
-    }
-});
+// WebFont.load({
+//     google: {
+//         families: ['Nunito', 'Lato']
+//     }
+// });
 
