@@ -6,7 +6,7 @@
 function style(selector, ...stylings) {
     let elements;
     (typeof selector != 'object' ? elements = document.querySelectorAll(selector) : elements = [selector]);
-    return document.querySelectorAll(selector).forEach(e => {
+    return elements.forEach(e => {
         stylings.forEach(styling => {
             (typeof styling) === 'function' ? styling = styling() : styling = styling
             for (const key in styling) {
