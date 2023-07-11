@@ -4,8 +4,9 @@
  */
 
 function style(selector, ...stylings) {
-    (typeof selector == 'object' ? selector = `.${selector.classList[0]}` : selector);
-    return document.querySelectorAll(selector).forEach(e => {
+    let elements;
+    (typeof selector != 'object' ? elements = document.querySelectorAll(selector) : elements = selector);
+    return elements.forEach(e => {
         stylings.forEach(styling => {
             (typeof styling) === 'function' ? styling = styling() : styling = styling
             for (const key in styling) {
