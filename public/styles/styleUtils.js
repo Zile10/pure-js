@@ -22,6 +22,8 @@ function style(selector, ...stylings) {
     })
 }
 
+export {style};
+
 // WebFont.load({
 //     google: {
 //         families: ['Nunito', 'Lato']
